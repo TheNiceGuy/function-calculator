@@ -1,0 +1,35 @@
+Read this if you want to compile it yourself.
+
+To compile it you'll need:
+[Module]
+- Python Mega Widget: http://pmw.sourceforge.net/
+- Python Imaging Lib: http://www.pythonware.com/products/pil/
+- mtTkinter:          http://tkinter.unpythonic.net/wiki/mtTkinter
+[Software]
+- Python 2.7.3:               http://www.python.org/
+- Cx_Freeze for Python 2.7.3: http://cx-freeze.sourceforge.net/
+
+METHOD 1:
+Once you have these module, you will compile it.
+Open CMD, on windows and type the followings command:
+> cd %PATH TO THIS FOLDER%
+> %PATHTOPYTHON%/python.exe setup.pyw build
+
+Here's an example:
+> cd C:/Project/Python/FunctionCalculator
+> C:/Python27/python.exe setup.pyw build
+
+METHOD 2:
+You can create a batch file(.bat) in the source folder
+and just add the followings line:
+> echo off
+> %PATHTOPYTHON%/python.exe setup.pyw build
+
+Here's an example:
+> echo off
+> C:/Python27/python.exe setup.pyw build
+
+Be sure to remove the (">") if you copy
+
+Now, both of these method should create you a folder build,
+inside that folder you'll have the compiled application.
